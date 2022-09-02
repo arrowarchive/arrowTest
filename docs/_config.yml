@@ -1,2 +1,7 @@
-title: Rachel Gerzevske (Arrowarchive's) Portfolio Website
-description: a portfolio of my digital art throughout the years
+title: Rachel Gerzevske's (Arrowarchive's) Portfolio Website
+description: My digital art portfolio containing pieces from 2018 onwards with no signs of stopping
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
