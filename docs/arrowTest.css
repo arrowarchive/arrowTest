@@ -301,7 +301,7 @@ flex-wrap: wrap;
  }
  
  footer{
-     display: flex;
+     display: block;
      margin-top: 10px;
      bottom: 10px;
      position: sticky;
