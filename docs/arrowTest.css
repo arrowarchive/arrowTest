@@ -72,7 +72,8 @@ div.flex {
 display:flex; justify-content:flex-start; align-items: flex-start;; flex-direction:row; flex-wrap: wrap;
 }
 
-div.sidebar {position:sticky;
+div.sidebar {
+position:sticky;
    top:0;
 text-align: left;
 border-radius: 12px;
@@ -90,7 +91,7 @@ div.main{
 }
 
 img{
-display:block;
+display: flex;
     border-radius: 15px;
     flex-direction: row;
     border: 12px solid white;
@@ -113,6 +114,7 @@ img#pfp {
         border-radius: 15px;
         background-color: transparent;
         margin-bottom: 0;
+        max-width: 70%;
 }
 
 a:hover {
@@ -299,7 +301,7 @@ flex-wrap: wrap;
  }
  
  footer{
-     display: block;
+     display: flex;
      margin-top: 10px;
      bottom: 10px;
      position: sticky;
@@ -309,16 +311,18 @@ flex-wrap: wrap;
 text-align: center;
      margin-left: auto;
      margin-right: auto;
-     display: block;
+     display: flex;
      position: relative;
           border: none;
           background-color: transparent;
           border-radius: 0px;
  }
  
-figure.mainImage {
+figure.mainImage { 
     max-width:70%;
-}
+    display: flex;
+    justify-content: space-around;
+} 
 
 figure.mainImage > img{
     object-fit:contain;
@@ -329,3 +333,9 @@ figure.mainImage > img{
     margin-bottom: 20px;
    
 } 
+
+.mainImage {
+    max-width:70%;
+    display: flex;
+    justify-content: space-around;
+}
