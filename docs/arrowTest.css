@@ -305,19 +305,33 @@ figure.mainImage {
     justify-content: space-around;
 } 
 
-div.overlay {
-    background-size: cover;
-    background-position: center;
-object-fit: contain;
+ .overlay {
+position: absolute;
+border-radius: 15px;
     transition: .5s ease;
     align-items: flex-end;
     display: flex;
+    z-index: 1;
+  top:55%;
+  bottom:8.2%;
+  left:0;
+  right:0;
+  opacity: 0;
 }
-
-.gallery:hover .overlay{
+.overlay > time > b {
+position: absolute;
+ color: white;
+ font-size: small;
+ top: 55%;
+ left: 50%;
+ transform: translate(-85%, -50%);
+ font-family: 'Open Sans', sans-serif;
+}
+figure:hover .overlay{
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    background-size: cover;
+    opacity: 1;
     }
+
 
 figure.gallery {
 position: relative;
